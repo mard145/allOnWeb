@@ -1,0 +1,40 @@
+<body class="container">
+    <%- include("header")%>
+
+    <main class="d-flex justify-content-between">
+        <form class="form-group d-flex flex-column mt-5" action="/" method="post">
+            <input class="form-control" type="text" name="name" id="name">
+            <input class="form-control" type="text" name="email" id="email">
+            <input class="form-control" type="password" name="password" id="password">
+            <input class="form-control" type="password" name="confirmPassword" id="confirmPassword">
+            <button class="btn btn-primary">Registrar-se</button>
+        </form>
+
+        <form class="form-group d-flex flex-column mt-5" action="/" method="post">
+            <input class="form-control" type="text" name="email">
+            <input class="form-control" type="password" name="password">
+            <button class="btn btn-success">Login</button>
+        </form>
+    </main>
+
+    <form name="userForm" id="userForm" class="form-group d-flex flex-column mt-5">
+        <input name="user" id="user" class="form-control" name="chat" type="text">
+         <button class="btn btn-warning">Definir</button>
+    </form>
+
+    <div id="messages">
+        
+    </div>
+
+    <form name="formMessage" id="formMessage" class="form-group d-flex flex-column mt-5">
+        <input name="msg" id="msg" class="form-control" name="chat" type="text">
+         <button class="btn btn-warning">Enviar Mensagem</button>
+    </form>
+    
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+   <script src="/js/chat.js"></script>
+</body>
